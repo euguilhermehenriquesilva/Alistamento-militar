@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family:'War';
+    src: url(../fonts/Wargate-Normal.ttf) format('Truetype');
+    font-weight: normal;
+}
+
+:root{
+    --font-padrao:"Oswald", sans-serif;
+    --font-guerra:'War', sans-serif;
+
+    --cor0:white;
+    --cor1:#D9D3B8;
+    --cor2:#94A66F;
+    --cor3:#7F8C64;
+    --cor4:#4B5947;
+    --cor5:#402F2F;
+    --cor6:black;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+header{
+    width: 100%;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.637);
+    padding-top: 20px;
+}
+
+header > h1{
+    text-align: center;
+    font-family: var(--font-guerra);
+    font-size: 3em;
+    color: var(--cor0);
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.603);
+    padding: 0px 10px;
+    margin-bottom: 30px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+nav > a{
+    text-align: center;
+    width: 33.3%;
+    text-decoration: none;
+    font-family: var(--font-padrao);
+    font-size: 1.5em;
+    color:var(--cor0);
+    padding: 10px 5px;
+}
+
+nav > a:hover{
+    background-color: var(--cor6);
+    transition-duration: 1s;
+}
+
+main{
+    background-color: var(--cor0);
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px 15px 15px 10px
+}
+
+main h1{
+    text-align: center;
+    font-size: 2.5em;
+    font-family: var(--font-guerra);
+    color: var(--cor5);
+    margin-bottom: 30px;
+}
+
+main h2{
+    font-size: 1.8em;
+    color: var(--cor5);
+    font-family: var(--font-padrao);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    padding: 5px 10px;
+}
+
+main p{
+    font-size: 1.2em;
+    font-family: var(--font-padrao);
+    text-align: justify;
+    line-height: 2em;
+    margin: 40px 10px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: #94A66F;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+main a:hover{
+    background-color: var(--cor5);
+    color: var(--cor2);
+}
+
+
+main img{
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+}
+
+footer{
+    background-color: var(--cor6);
+    color: var(--cor0);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 20px 0px
+}
+
